@@ -1,0 +1,193 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier Prime', monospace;
+    height: 633px;
+    /* background-image: url(s.avif);
+    background-repeat: repeat-x;
+    background-position-x: center; */
+    background: linear-gradient(30deg,black,rgb(118, 239, 252),black);
+}
+.main-box{
+    width: 25%;
+    box-shadow: 0 0 5px black,inset 0 0 10px black;
+    height: 95vh;
+    display: flex;
+    color: white;
+    margin-top: 7px;
+    font-weight: 500;
+    border-radius: 9px;
+}
+.main-box>.box-one{
+    width: 95%;
+    margin-left: 2.3%;
+    border: 1px solid black;
+    height: 92vh;
+    margin-top: 6px;
+    border-radius: 9px;
+    background:  linear-gradient(20deg,rgb(28, 23, 23) 50%,rgb(22, 228, 239) 80%);
+}
+.main-box>.box-one>.box-two{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.main-box>.box-one>.box-two>span{
+    display: flex;
+    justify-content: space-around;
+}
+.main-box>.box-one>.box-two>span>small{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.main-box>.box-one>.box-two>span>button{
+    width: 80px;
+    height: 28px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin-left: 2px;
+    padding: 1px 3px;
+    outline: none;
+    margin-top: 15px;
+    background-color: rgb(22, 4, 4);
+    color: rgb(255, 251, 251);
+}
+.main-box>.box-one>.box-two>span>button:hover{
+    transform: scale(0.90);
+}
+.main-box>.box-one>.box-three{
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    flex-direction: column;
+}
+.main-box>.box-one>.box-three>span{
+    display: flex;
+   justify-content: space-around;
+}
+.main-box>.box-one>.box-three>span>small{
+    font-size: 11px;
+}
+.main-box>.box-one>.box-three>span>button{
+    width: 85px;
+    height: 33px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color: rgba(0, 0, 0, 0.919);
+    color: white;
+    outline: none;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+.main-box>.box-one>.box-three>span>button:hover{
+    transform: scale(0.90);
+}
+.main-box>.box-one>.box-one-top{
+    width: 97%;
+    margin-left: 1%;
+    height: 30vh;
+    margin-top: 3px;
+    box-shadow: inset 0 0 1px;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+.main-box>.box-one>.box-one-top>#box-one-bottom{
+    width: 95%;
+    margin-left: 1%;
+    display: flex;
+    margin: 15px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.main-box>.box-one>.box-one-top>#box-one-bottom>button{
+    width: 80px;
+    margin-left: 2px;
+    height: 24px;
+    outline: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    border-bottom:  10px;
+    background-color: rgb(151, 2, 151);
+    color: white;
+}
+.main-box>.box-one>.box-one-top>#box-one-bottom>button:hover{
+    transform: scale(0.96);
+}
+.main-box>.box-one>.box-one-top>#box-one-middle{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15vh;
+    margin-top: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow:inset 0 0 8px grey;
+}
+.main-box>.box-one>.box-one-top>#box-one-text{
+    display: flex;
+    justify-content: space-around;
+    font-size:20px ;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    margin-top: 18px;
+}
+.clock{
+    position: relative;
+    height: 36px;
+    width: 100px;
+    border-radius: 4px;
+    left: 10px;
+    background-color: black;
+    text-align: center;
+    margin-top: -9px;
+}
+#time{
+    color: black;
+    position: relative;
+    background: rgb(92, 235, 248);
+    width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: center;
+}
+.main-box>.box-one>.box-one-top>#box-one-middle>input[type=text]{
+    width: 95%;
+    box-shadow: 0 0 8px black;
+    height: 13vh;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .main-box > .box-one {
+        height: auto;
+        margin-top: 10px;
+    }
+    .main-box > .box-one > .box-two,.main-box > .box-one > .box-three {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-box > .box-one > .box-three > span > button {
+        width: 100px;
+    }
+    .main-box > .box-one > .box-one-top > #box-one-bottom > button {
+        width: 100px;
+    }
+    .main-box > .box-one > .box-one-top > #box-one-middle {
+        height: auto;
+    }
+    .main-box > .box-one > .box-one-top > #box-one-middle > input[type=text] {
+        width: 100%;
+        height: 100px;
+    }
+}
